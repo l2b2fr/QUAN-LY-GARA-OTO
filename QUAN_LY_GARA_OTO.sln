@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUAN_LY_GARA_OTO", "QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO.csproj", "{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04397913-1ABE-4699-B3C4-5232D9BFD6AB}
+	EndGlobalSection
+EndGlobal
