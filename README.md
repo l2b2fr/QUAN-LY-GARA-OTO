@@ -11,11 +11,11 @@ Liệt kê bất kỳ yêu cầu tiên quyết cần thiết để cài đặt v
 ### Cài Đặt
 Cách tải :
 ```
-git clone https://github.com/l2b2fr/QuanLyGaraOto.git
+git clone https://github.com/l2b2fr/QUAN-LY-GARA-OTO.git
 ```
 Hướng dẫn cách cập nhật code "pull code về"
 ```
-cd QuanLyGaraOto
+cd QUAN-LY-GARA-OTO
 git pull origin main
 ```
 
