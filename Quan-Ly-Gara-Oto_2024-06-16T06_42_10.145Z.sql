@@ -89,6 +89,16 @@ CREATE TABLE [tb_SoLuongVatTuPhuTung] (
 );
 GO
 
+CREATE TABLE [tb_RestrictedList] (
+	[id] INT NOT NULL IDENTITY UNIQUE,
+	[vehicleBrandLimit] INT,
+	[carLimit] INT,
+	[materialLimit] INT,
+	[workLimit] INT,
+	PRIMARY KEY([id])
+);
+GO
+
 ALTER TABLE [tb_PhuongTien]
 ADD FOREIGN KEY([idKhachHang]) REFERENCES [tb_KhachHang]([id])
 ON UPDATE CASCADE ON DELETE CASCADE;
@@ -124,6 +134,12 @@ VALUES ('admin', '123456', 'ADMIN'),
        ('leminhnam', '123456', 'NHÂN VIÊN'),
        ('dothithom', '123456', 'NHÂN VIÊN'),
        ('phamthuyquynh', '123456', 'NHÂN VIÊN');
+GO
+
+-- Thêm dữ liệu vào bảng tb_RestrictedList
+INSERT INTO [tb_RestrictedList] ([vehicleBrandLimit], [carLimit], [materialLimit], [workLimit])
+VALUES 
+(10, 30, 200, 100)
 GO
 
 -- -- Thêm dữ liệu vào bảng tb_VatTuPhuTung với 200 mục, mỗi mục có giá và loại ngẫu nhiên

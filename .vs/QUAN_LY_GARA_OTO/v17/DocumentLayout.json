@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|c:\\users\\leminhnam\\desktop\\quan_ly_gara_oto\\quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frm_dasboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frm_dasboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|c:\\users\\leminhnam\\desktop\\quan_ly_gara_oto\\quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaodoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaodoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlykho\\ucquanlytiencong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -43,36 +35,44 @@
       "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlykho\\ucquanlytiencong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frm_dasboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frm_dasboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaoton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uctracuuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uctracuuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frm_dasboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaodoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaocao\\ucbaocaodoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uctiepnhanbaotrixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uctiepnhanbaotrixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlykho\\ucquanlyvattuphutung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uctiepnhanbaotrixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uctiepnhanbaotrixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uclapphieusuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\quan_ly_gara_oto\\ui\\quanlybaotri\\uctracuuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9316FE58-4273-4340-AD3B-ABB0C28CAB3B}|QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO.csproj|solutionrelative:quan_ly_gara_oto\\ui\\quanlybaotri\\uctracuuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,19 +90,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ucBaoCaoTon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoTon.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoTon.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoTon.cs [Design]",
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoTon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T09:26:49.703Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-13T09:26:49.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "frm_Dasboard.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frm_Dasboard.Designer.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\frm_Dasboard.Designer.cs",
@@ -115,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "ucQuanLyTienCong.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyTienCong.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyTienCong.cs",
@@ -127,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ucQuanLyTienCong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyTienCong.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyTienCong.cs",
@@ -138,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "ucQuanLyVatTuPhuTung.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyVatTuPhuTung.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyVatTuPhuTung.cs",
@@ -150,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "ucQuanLyVatTuPhuTung.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyVatTuPhuTung.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyKho\\ucQuanLyVatTuPhuTung.cs",
@@ -161,19 +160,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "ucLapPhieuSuaChua.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABgAAAAJAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:13:32.132Z"
+              "WhenOpened": "2024-06-13T07:13:32.132Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ucBaoCaoDoanhSo.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoDoanhSo.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoCao\\ucBaoCaoDoanhSo.cs",
@@ -184,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "ucTraCuuXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTraCuuXe.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTraCuuXe.cs",
@@ -195,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\Program.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\Program.cs",
@@ -203,22 +203,24 @@
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:28:36.937Z"
+              "WhenOpened": "2024-06-13T07:28:36.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "ucLapPhieuSuaChua.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs [Design]",
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucLapPhieuSuaChua.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:05:29.185Z"
+              "WhenOpened": "2024-06-13T07:05:29.185Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ucTiepNhanBaoTriXe.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTiepNhanBaoTriXe.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTiepNhanBaoTriXe.cs",
@@ -230,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ucTiepNhanBaoTriXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTiepNhanBaoTriXe.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\UI\\QuanLyBaoTri\\ucTiepNhanBaoTriXe.cs",
@@ -241,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\Models\\Users.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\Models\\Users.cs",
@@ -249,25 +251,24 @@
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\Models\\Users.cs",
               "ViewState": "AQIAAHsAAAAAAAAAAAAkwHcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T06:55:45.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T06:55:45.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "frm_Dasboard.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAuwK4AAAAdAAAA",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAmwJEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T03:09:29.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frm_Dasboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\frm_Dasboard.cs",
@@ -279,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "frmLogin.cs",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frmLogin.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\frmLogin.cs",
@@ -287,20 +288,18 @@
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\frmLogin.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAIwEgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T03:07:19.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T03:07:19.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frmLogin.cs",
               "RelativeDocumentMoniker": "QUAN_LY_GARA_OTO\\frmLogin.cs",
               "ToolTip": "C:\\Users\\LEMINHNAM\\Desktop\\QUAN_LY_GARA_OTO\\QUAN_LY_GARA_OTO\\frmLogin.cs [Design]",
               "RelativeToolTip": "QUAN_LY_GARA_OTO\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T03:07:10.014Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-13T03:07:10.014Z"
             }
           ]
         }
