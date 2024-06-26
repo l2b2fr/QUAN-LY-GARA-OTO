@@ -30,7 +30,6 @@ C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpres
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_.790ADB34.Up2Date
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.exe.licenses
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.frm_Dashboard.resources
-C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.Starting.resources
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.ucDashBoard.resources
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoTri.ucLapPhieuSuaChua.resources
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoTri.ucTiepNhanBaoTriXe.resources
@@ -97,3 +96,7 @@ C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpres
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.xml
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoCao.ucBaoCaoDoanhSo.resources
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoCao.ucBaoCaoTon.resources
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\EntityFramework.dll
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\EntityFramework.xml
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\EntityFramework.SqlServer.xml

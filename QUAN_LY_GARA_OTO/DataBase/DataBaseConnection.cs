@@ -11,7 +11,7 @@ namespace QUAN_LY_GARA_OTO.DataBase
 {
     internal class DataBaseConnection
     {
-        private string connectionString = "Data Source=DESKTOP-2FF1JBQ;Initial Catalog=QUAN_LY_GARA_OTO;User ID=qlSinhVien;Password=namdz2k4;";
+        private string connectionString = "Data Source=DESKTOP-2FF1JBQ;Initial Catalog=QUAN_LY_GARA_OTO;User ID=QL_GARA_OTO;Password=namdz2k4;";
         private SqlConnection connection;
 
         public SqlConnection GetConnection()

@@ -45,11 +45,11 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.cmbHieuXe = new System.Windows.Forms.ComboBox();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbHieuXe = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl = new DevExpress.XtraEditors.PanelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -58,22 +58,31 @@
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenChuXe = new System.Windows.Forms.TextBox();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridData = new DevExpress.XtraGrid.GridControl();
             this.panelGrid = new DevExpress.XtraEditors.PanelControl();
+            this.gridData = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.address = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.carBrand = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.carNumberPlates = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.idTiepNhan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dayReception = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayTiepNhan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayTiepNhan.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHieuXe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl)).BeginInit();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelGrid)).BeginInit();
             this.panelGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl5
@@ -99,13 +108,13 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.dtNgayTiepNhan);
-            this.groupControl2.Controls.Add(this.cmbHieuXe);
             this.groupControl2.Controls.Add(this.btnHuy);
             this.groupControl2.Controls.Add(this.btnLuu);
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.txtBienSo);
             this.groupControl2.Controls.Add(this.labelControl6);
+            this.groupControl2.Controls.Add(this.cmbHieuXe);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(696, 2);
             this.groupControl2.Name = "groupControl2";
@@ -229,16 +238,6 @@
             this.barButtonItem2.Id = 1;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // cmbHieuXe
-            // 
-            this.cmbHieuXe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbHieuXe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.cmbHieuXe.FormattingEnabled = true;
-            this.cmbHieuXe.Location = new System.Drawing.Point(124, 29);
-            this.cmbHieuXe.Name = "cmbHieuXe";
-            this.cmbHieuXe.Size = new System.Drawing.Size(185, 27);
-            this.cmbHieuXe.TabIndex = 8;
-            // 
             // btnHuy
             // 
             this.btnHuy.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -247,7 +246,7 @@
             this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Location = new System.Drawing.Point(334, 93);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(88, 32);
+            this.btnHuy.Size = new System.Drawing.Size(113, 32);
             this.btnHuy.TabIndex = 7;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -260,7 +259,7 @@
             this.btnLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLuu.ImageOptions.SvgImage")));
             this.btnLuu.Location = new System.Drawing.Point(334, 34);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(88, 32);
+            this.btnLuu.Size = new System.Drawing.Size(113, 32);
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -284,6 +283,22 @@
             this.labelControl6.Size = new System.Drawing.Size(106, 19);
             this.labelControl6.TabIndex = 2;
             this.labelControl6.Text = "Ngày tiếp nhận:";
+            // 
+            // cmbHieuXe
+            // 
+            this.cmbHieuXe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbHieuXe.EditValue = "";
+            this.cmbHieuXe.Location = new System.Drawing.Point(124, 29);
+            this.cmbHieuXe.MenuManager = this.barManager1;
+            this.cmbHieuXe.Name = "cmbHieuXe";
+            this.cmbHieuXe.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.cmbHieuXe.Properties.Appearance.Options.UseFont = true;
+            this.cmbHieuXe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbHieuXe.Properties.NullText = "[EditValue is null]";
+            this.cmbHieuXe.Properties.PopupSizeable = true;
+            this.cmbHieuXe.Size = new System.Drawing.Size(185, 26);
+            this.cmbHieuXe.TabIndex = 10;
             // 
             // panelControl
             // 
@@ -370,10 +385,16 @@
             this.txtTenChuXe.Size = new System.Drawing.Size(559, 26);
             this.txtTenChuXe.TabIndex = 3;
             // 
-            // gridView1
+            // panelGrid
             // 
-            this.gridView1.GridControl = this.gridData;
-            this.gridView1.Name = "gridView1";
+            this.panelGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelGrid.Controls.Add(this.gridData);
+            this.panelGrid.Location = new System.Drawing.Point(0, 162);
+            this.panelGrid.Name = "panelGrid";
+            this.panelGrid.Size = new System.Drawing.Size(1152, 488);
+            this.panelGrid.TabIndex = 9;
             // 
             // gridData
             // 
@@ -387,16 +408,96 @@
             this.gridData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // panelGrid
+            // gridView1
             // 
-            this.panelGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelGrid.Controls.Add(this.gridData);
-            this.panelGrid.Location = new System.Drawing.Point(0, 162);
-            this.panelGrid.Name = "panelGrid";
-            this.panelGrid.Size = new System.Drawing.Size(1152, 488);
-            this.panelGrid.TabIndex = 9;
+            this.gridView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.id,
+            this.name,
+            this.address,
+            this.phone,
+            this.carBrand,
+            this.carNumberPlates,
+            this.idTiepNhan,
+            this.dayReception});
+            this.gridView1.GridControl = this.gridData;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFilter.ShowInHeaderSearchResults = DevExpress.XtraGrid.Views.Grid.ShowInHeaderSearchResultsMode.None;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsFind.FindNullPrompt = "Nhập thông tin muốn tìm kiếm ...";
+            this.gridView1.OptionsFind.SearchInPreview = true;
+            this.gridView1.OptionsView.ShowAutoFilterRow = true;
+            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
+            // 
+            // id
+            // 
+            this.id.Caption = "STT";
+            this.id.FieldName = "id";
+            this.id.MaxWidth = 40;
+            this.id.MinWidth = 40;
+            this.id.Name = "id";
+            this.id.Visible = true;
+            this.id.VisibleIndex = 0;
+            this.id.Width = 40;
+            // 
+            // name
+            // 
+            this.name.Caption = "Tên chủ xe";
+            this.name.FieldName = "name";
+            this.name.Name = "name";
+            this.name.Visible = true;
+            this.name.VisibleIndex = 1;
+            // 
+            // address
+            // 
+            this.address.Caption = "Địa chỉ";
+            this.address.FieldName = "address";
+            this.address.Name = "address";
+            this.address.Visible = true;
+            this.address.VisibleIndex = 2;
+            // 
+            // phone
+            // 
+            this.phone.Caption = "Điện Thoại";
+            this.phone.FieldName = "phone";
+            this.phone.Name = "phone";
+            this.phone.Visible = true;
+            this.phone.VisibleIndex = 3;
+            // 
+            // carBrand
+            // 
+            this.carBrand.Caption = "Hiệu xe";
+            this.carBrand.FieldName = "carBrand";
+            this.carBrand.Name = "carBrand";
+            this.carBrand.Visible = true;
+            this.carBrand.VisibleIndex = 4;
+            // 
+            // carNumberPlates
+            // 
+            this.carNumberPlates.Caption = "Biển số";
+            this.carNumberPlates.FieldName = "carNumberPlates";
+            this.carNumberPlates.Name = "carNumberPlates";
+            this.carNumberPlates.Visible = true;
+            this.carNumberPlates.VisibleIndex = 5;
+            // 
+            // idTiepNhan
+            // 
+            this.idTiepNhan.AppearanceCell.Options.UseTextOptions = true;
+            this.idTiepNhan.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.idTiepNhan.Caption = "Mã tiếp nhận";
+            this.idTiepNhan.FieldName = "idTiepNhan";
+            this.idTiepNhan.Name = "idTiepNhan";
+            this.idTiepNhan.Visible = true;
+            this.idTiepNhan.VisibleIndex = 6;
+            // 
+            // dayReception
+            // 
+            this.dayReception.Caption = "Ngày tiếp nhận";
+            this.dayReception.FieldName = "dayReception";
+            this.dayReception.Name = "dayReception";
+            this.dayReception.Visible = true;
+            this.dayReception.VisibleIndex = 7;
             // 
             // ucTiepNhanBaoTriXe
             // 
@@ -417,15 +518,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayTiepNhan.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayTiepNhan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHieuXe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl)).EndInit();
             this.panelControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelGrid)).EndInit();
             this.panelGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,8 +549,6 @@
         private System.Windows.Forms.TextBox txtDiaChi;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private System.Windows.Forms.TextBox txtTenChuXe;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridControl gridData;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.BarButtonItem btnThem;
@@ -461,7 +561,17 @@
         private DevExpress.XtraEditors.PanelControl panelGrid;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barbtnDieuChinh;
-        private System.Windows.Forms.ComboBox cmbHieuXe;
         private DevExpress.XtraEditors.DateEdit dtNgayTiepNhan;
+        private DevExpress.XtraGrid.GridControl gridData;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn id;
+        private DevExpress.XtraGrid.Columns.GridColumn name;
+        private DevExpress.XtraGrid.Columns.GridColumn address;
+        private DevExpress.XtraGrid.Columns.GridColumn phone;
+        private DevExpress.XtraGrid.Columns.GridColumn carBrand;
+        private DevExpress.XtraGrid.Columns.GridColumn carNumberPlates;
+        private DevExpress.XtraGrid.Columns.GridColumn dayReception;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbHieuXe;
+        private DevExpress.XtraGrid.Columns.GridColumn idTiepNhan;
     }
 }

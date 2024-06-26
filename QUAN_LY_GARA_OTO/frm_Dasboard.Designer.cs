@@ -246,6 +246,7 @@
             this.accordionControlElement25.Name = "accordionControlElement25";
             this.accordionControlElement25.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement25.Text = "Phiên Bản";
+            this.accordionControlElement25.Click += new System.EventHandler(this.accordionControlElement25_Click);
             // 
             // fluentDesignFormControl1
             // 

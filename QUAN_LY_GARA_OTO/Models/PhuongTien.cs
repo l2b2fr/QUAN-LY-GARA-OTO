@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QUAN_LY_GARA_OTO.Models
 {
@@ -24,6 +25,72 @@ namespace QUAN_LY_GARA_OTO.Models
             this.idKhachHang = idKhachHang;
             this.carBrand = carBrand;
             this.carNumberPlates = carNumberPlates;
+        }
+
+        public PhuongTien SelectPhuongTienKhachHang(int idKhachHang)
+        {
+            DataBaseConnection connectionManager = new DataBaseConnection();
+            SqlConnection _connection = connectionManager.GetConnection();
+            PhuongTien phuongTien = new PhuongTien();
+            if (_connection == null) return null;
+
+            try
+            {
+                string query = "SELECT * FROM tb_PhuongTien WHERE [idKhachHang] = @idKhachHang";
+                SqlCommand command = new SqlCommand(query, _connection);
+                command.Parameters.AddWithValue("@idKhachHang", idKhachHang);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    phuongTien.id = reader.GetInt32(reader.GetOrdinal("id"));
+                    phuongTien.idKhachHang = reader.GetInt32(reader.GetOrdinal("idKhachHang"));
+                    phuongTien.carBrand = reader.GetString(reader.GetOrdinal("carBrand"));
+                    phuongTien.carNumberPlates = reader.GetString(reader.GetOrdinal("carNumberPlates"));
+                }
+                return phuongTien;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                connectionManager.CloseConnection(_connection);
+            }
+        }
+
+        public PhuongTien SelectPhuongTienBienSo(string bienSo)
+        {
+            DataBaseConnection connectionManager = new DataBaseConnection();
+            SqlConnection _connection = connectionManager.GetConnection();
+            PhuongTien phuongTien = new PhuongTien();
+            if (_connection == null) return null;
+
+            try
+            {
+                string query = "SELECT * FROM tb_PhuongTien WHERE [carNumberPlates] = @bienSo";
+                SqlCommand command = new SqlCommand(query, _connection);
+                command.Parameters.AddWithValue("@bienSo", bienSo);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    phuongTien.id = reader.GetInt32(reader.GetOrdinal("id"));
+                    phuongTien.idKhachHang = reader.GetInt32(reader.GetOrdinal("idKhachHang"));
+                    phuongTien.carBrand = reader.GetString(reader.GetOrdinal("carBrand"));
+                    phuongTien.carNumberPlates = reader.GetString(reader.GetOrdinal("carNumberPlates"));
+                }
+                return phuongTien;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                connectionManager.CloseConnection(_connection);
+            }
         }
 
         // Hàm thêm phương tiện mới
@@ -63,18 +130,18 @@ namespace QUAN_LY_GARA_OTO.Models
 
             try
             {
-                string query = "UPDATE tb_PhuongTien SET [idKhachHang] = @idKhachHang, [carBrand] = @carBrand, [carNumberPlates] = @carNumberPlates WHERE id = @id";
+                string query = "UPDATE tb_PhuongTien SET [carBrand] = @carBrand, [carNumberPlates] = @carNumberPlates WHERE idKhachHang = @idKhachHang";
                 SqlCommand command = new SqlCommand(query, _connection);
-                command.Parameters.AddWithValue("@idKhachHang", phuongTien.idKhachHang);
                 command.Parameters.AddWithValue("@carBrand", phuongTien.carBrand);
                 command.Parameters.AddWithValue("@carNumberPlates", phuongTien.carNumberPlates);
-                command.Parameters.AddWithValue("@id", phuongTien.id);
+                command.Parameters.AddWithValue("@idKhachHang", phuongTien.idKhachHang);
                 int rowsAffected = command.ExecuteNonQuery();
                 return rowsAffected > 0;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Lỗi khi cập nhật phương tiện: " + ex.Message);
+                MessageBox.Show("Lỗi huhu" + ex.Message);
                 return false;
             }
             finally

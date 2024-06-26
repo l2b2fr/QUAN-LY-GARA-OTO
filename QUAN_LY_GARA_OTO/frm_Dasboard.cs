@@ -51,134 +51,83 @@ namespace QUAN_LY_GARA_OTO
         private void aceLapPhieuSuaChua_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceLapPhieuSuaChua.Text;
-            if (ucLapPhieuSuaChua == null)
-            {
-                ucLapPhieuSuaChua = new ucLapPhieuSuaChua();
-                ucLapPhieuSuaChua.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucLapPhieuSuaChua);
-                ucLapPhieuSuaChua.BringToFront();
-            }
-            else
-            {
-                ucLapPhieuSuaChua.BringToFront();
-            }
+            ucLapPhieuSuaChua = new ucLapPhieuSuaChua();
+            ucLapPhieuSuaChua.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucLapPhieuSuaChua);
+            ucLapPhieuSuaChua.BringToFront();
         }
 
         private void aceTraCuuXe_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption= aceTraCuuXe.Text;
-            if (ucTraCuuXe == null)
-            {
-                ucTraCuuXe = new ucTraCuuXe();
-                ucTraCuuXe.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucTraCuuXe);
-                ucTraCuuXe.BringToFront();
-            }
-            else
-            {
-                ucTraCuuXe.BringToFront();
-            }
+            ucTraCuuXe = new ucTraCuuXe();
+            ucTraCuuXe.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucTraCuuXe);
+            ucTraCuuXe.BringToFront();
         }
 
         private void aceQuanLyVatTuPhuTung_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceQuanLyVatTuPhuTung.Text;
-            if (ucQuanLyVatTuPhuTung == null)
-            {
-                ucQuanLyVatTuPhuTung = new ucQuanLyVatTuPhuTung();
-                ucQuanLyVatTuPhuTung.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucQuanLyVatTuPhuTung);
-                ucQuanLyVatTuPhuTung.BringToFront();
-            }
-            else
-            {
-                ucQuanLyVatTuPhuTung.BringToFront();
-            }
+            ucQuanLyVatTuPhuTung = new ucQuanLyVatTuPhuTung();
+            ucQuanLyVatTuPhuTung.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucQuanLyVatTuPhuTung);
+            ucQuanLyVatTuPhuTung.BringToFront();
         }
 
         private void aceQuanLyTienCong_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceQuanLyTienCong.Text;
-            if (ucQuanLyTienCong == null)
-            {
-                ucQuanLyTienCong = new ucQuanLyTienCong();
-                ucQuanLyTienCong.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucQuanLyTienCong);
-                ucQuanLyTienCong.BringToFront();
-            }
-            else
-            {
-                ucQuanLyTienCong.BringToFront();
-            }
+            ucQuanLyTienCong = new ucQuanLyTienCong();
+            ucQuanLyTienCong.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucQuanLyTienCong);
+            ucQuanLyTienCong.BringToFront();
         }
 
         private void aceBaoCaoDoanhSo_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceBaoCaoDoanhSo.Text;
-            if (ucBaoCaoDoanhSo == null)
-            {
-                ucBaoCaoDoanhSo = new ucBaoCaoDoanhSo();
-                ucBaoCaoDoanhSo.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucBaoCaoDoanhSo);
-                ucBaoCaoDoanhSo.BringToFront();
-            }
-            else
-            {
-                ucBaoCaoDoanhSo.BringToFront();
-            }
+            ucBaoCaoDoanhSo = new ucBaoCaoDoanhSo();
+            ucBaoCaoDoanhSo.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucBaoCaoDoanhSo);
+            ucBaoCaoDoanhSo.BringToFront();
         }
 
         private void aceBaoCaoTon_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceBaoCaoTon.Text;
-            if (ucBaoCaoTon == null)
-            {
-                ucBaoCaoTon = new ucBaoCaoTon();
-                ucBaoCaoTon.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucBaoCaoTon);
-                ucBaoCaoTon.BringToFront();
-            }
-            else
-            {
-                ucBaoCaoTon.BringToFront();
-            }
+            ucBaoCaoTon = new ucBaoCaoTon();
+            ucBaoCaoTon.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucBaoCaoTon);
+            ucBaoCaoTon.BringToFront();
         }
 
         private void aceTiepNhanBaoTriXe_Click(object sender, EventArgs e)
         {
             btxtTieuDe.Caption = aceTiepNhanBaoTriXe.Text;
-            if (ucTiepNhanBaoTriXe == null)
-            {
-                ucTiepNhanBaoTriXe = new ucTiepNhanBaoTriXe();
-                ucTiepNhanBaoTriXe.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucTiepNhanBaoTriXe);
-                ucTiepNhanBaoTriXe.BringToFront();
-            }
-            else
-            {
-                ucTiepNhanBaoTriXe.BringToFront();
-            }
+            ucTiepNhanBaoTriXe = new ucTiepNhanBaoTriXe();
+            ucTiepNhanBaoTriXe.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucTiepNhanBaoTriXe);
+            ucTiepNhanBaoTriXe.BringToFront();
         }
 
         private void aceDashBoard_Click_1(object sender, EventArgs e)
         {
             btxtTieuDe.Caption= aceDashBoard.Text;
-            if (ucDashBoard == null)
-            {
-                ucDashBoard = new ucDashBoard();
-                ucDashBoard.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(ucDashBoard);
-                ucDashBoard.BringToFront();
-            }
-            else
-            {
-                ucDashBoard.BringToFront();
-            }
+            ucDashBoard = new ucDashBoard();
+            ucDashBoard.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucDashBoard);
+            ucDashBoard.BringToFront();
         }
 
         private void accordionControlElement3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void accordionControlElement25_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đây là phiên bản v1.0\nNhà phát triển:\nLê Minh Nam 0123456789\nĐỗ Thị Thơm 0123456789\nPhạm Thúy Quỳnh 0123456789","Thông tin",MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

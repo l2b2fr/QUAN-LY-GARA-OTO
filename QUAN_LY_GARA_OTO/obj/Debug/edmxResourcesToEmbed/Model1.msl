@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QUAN_LY_GARA_OTOModelStoreContainer" CdmEntityContainer="QUAN_LY_GARA_OTOEntities">
+    <EntitySetMapping Name="tb_KhachHang">
+      <EntityTypeMapping TypeName="QUAN_LY_GARA_OTOModel.tb_KhachHang">
+        <MappingFragment StoreEntitySet="tb_KhachHang">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_PhuongTien">
+      <EntityTypeMapping TypeName="QUAN_LY_GARA_OTOModel.tb_PhuongTien">
+        <MappingFragment StoreEntitySet="tb_PhuongTien">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idKhachHang" ColumnName="idKhachHang" />
+          <ScalarProperty Name="carBrand" ColumnName="carBrand" />
+          <ScalarProperty Name="carNumberPlates" ColumnName="carNumberPlates" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_TiepNhanXeSua">
+      <EntityTypeMapping TypeName="QUAN_LY_GARA_OTOModel.tb_TiepNhanXeSua">
+        <MappingFragment StoreEntitySet="tb_TiepNhanXeSua">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPhuongTien" ColumnName="idPhuongTien" />
+          <ScalarProperty Name="dayReception" ColumnName="dayReception" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

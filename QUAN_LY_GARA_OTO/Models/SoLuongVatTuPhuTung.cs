@@ -1,10 +1,12 @@
-﻿using QUAN_LY_GARA_OTO.DataBase;
+﻿using DevExpress.Data.Helpers;
+using QUAN_LY_GARA_OTO.DataBase;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QUAN_LY_GARA_OTO.Models
 {
@@ -24,25 +26,36 @@ namespace QUAN_LY_GARA_OTO.Models
         }
 
         // Hàm thêm số lượng vật tư phụ tùng mới
-        public bool CreateSoLuongVatTuPhuTung(SoLuongVatTuPhuTung soLuong)
+        public SoLuongVatTuPhuTung CreateSoLuongVatTuPhuTung(SoLuongVatTuPhuTung soLuong)
         {
             DataBaseConnection connectionManager = new DataBaseConnection();
             _connection = connectionManager.GetConnection();
-            if (_connection == null) return false;
+            if (_connection == null) return null;
+            SoLuongVatTuPhuTung soLuongVatTuPhuTung = new SoLuongVatTuPhuTung();
 
             try
             {
-                string query = "INSERT INTO tb_SoLuongVatTuPhuTung ([idVatTuPhuTung], [quantity]) VALUES (@idVatTuPhuTung, @quantity)";
+                string query = "INSERT INTO tb_SoLuongVatTuPhuTung ([idVatTuPhuTung], [quantity]) VALUES (@idVatTuPhuTung, @quantity); SELECT SCOPE_IDENTITY();";
                 SqlCommand command = new SqlCommand(query, _connection);
                 command.Parameters.AddWithValue("@idVatTuPhuTung", soLuong.idVatTuPhuTung);
                 command.Parameters.AddWithValue("@quantity", soLuong.quantity);
-                int rowsAffected = command.ExecuteNonQuery();
-                return rowsAffected > 0;
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    soLuongVatTuPhuTung.id = Convert.ToInt32(result);
+                    //MessageBox.Show(soLuongVatTuPhuTung.id.ToString());
+                    return soLuongVatTuPhuTung;
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi thêm số lượng vật tư","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    return null;
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Lỗi khi thêm số lượng vật tư phụ tùng: " + ex.Message);
-                return false;
+                return null;
             }
             finally
             {

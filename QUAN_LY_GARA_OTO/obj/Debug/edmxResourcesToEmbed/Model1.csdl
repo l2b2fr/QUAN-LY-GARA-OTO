@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QUAN_LY_GARA_OTOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_KhachHang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_PhuongTien" Relationship="Self.FK__tb_Phuong__idKha__534D60F1" FromRole="tb_KhachHang" ToRole="tb_PhuongTien" />
+  </EntityType>
+  <EntityType Name="tb_PhuongTien">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idKhachHang" Type="Int32" />
+    <Property Name="carBrand" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="carNumberPlates" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_KhachHang" Relationship="Self.FK__tb_Phuong__idKha__534D60F1" FromRole="tb_PhuongTien" ToRole="tb_KhachHang" />
+    <NavigationProperty Name="tb_TiepNhanXeSua" Relationship="Self.FK__tb_TiepNh__idPhu__5441852A" FromRole="tb_PhuongTien" ToRole="tb_TiepNhanXeSua" />
+  </EntityType>
+  <EntityType Name="tb_TiepNhanXeSua">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPhuongTien" Type="Int32" />
+    <Property Name="dayReception" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="tb_PhuongTien" Relationship="Self.FK__tb_TiepNh__idPhu__5441852A" FromRole="tb_TiepNhanXeSua" ToRole="tb_PhuongTien" />
+  </EntityType>
+  <Association Name="FK__tb_Phuong__idKha__534D60F1">
+    <End Role="tb_KhachHang" Type="Self.tb_KhachHang" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tb_PhuongTien" Type="Self.tb_PhuongTien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_KhachHang">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_PhuongTien">
+        <PropertyRef Name="idKhachHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tb_TiepNh__idPhu__5441852A">
+    <End Role="tb_PhuongTien" Type="Self.tb_PhuongTien" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tb_TiepNhanXeSua" Type="Self.tb_TiepNhanXeSua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_PhuongTien">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_TiepNhanXeSua">
+        <PropertyRef Name="idPhuongTien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QUAN_LY_GARA_OTOEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_KhachHang" EntityType="Self.tb_KhachHang" />
+    <EntitySet Name="tb_PhuongTien" EntityType="Self.tb_PhuongTien" />
+    <EntitySet Name="tb_TiepNhanXeSua" EntityType="Self.tb_TiepNhanXeSua" />
+    <AssociationSet Name="FK__tb_Phuong__idKha__534D60F1" Association="Self.FK__tb_Phuong__idKha__534D60F1">
+      <End Role="tb_KhachHang" EntitySet="tb_KhachHang" />
+      <End Role="tb_PhuongTien" EntitySet="tb_PhuongTien" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tb_TiepNh__idPhu__5441852A" Association="Self.FK__tb_TiepNh__idPhu__5441852A">
+      <End Role="tb_PhuongTien" EntitySet="tb_PhuongTien" />
+      <End Role="tb_TiepNhanXeSua" EntitySet="tb_TiepNhanXeSua" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

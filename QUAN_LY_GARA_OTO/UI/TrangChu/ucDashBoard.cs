@@ -19,9 +19,26 @@ namespace QUAN_LY_GARA_OTO.UI
             InitializeComponent();
         }
 
+        private int imagesNumber = 1;
+
+        private void loadImages()
+        {
+            if (imagesNumber == 8)
+            {
+                imagesNumber = 1;
+            }
+            picSlide.ImageLocation = string.Format(@"Images\{0}.jpg",imagesNumber);
+            imagesNumber++;
+        }
+
         private void ucDashBoard_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            loadImages();
         }
     }
 }

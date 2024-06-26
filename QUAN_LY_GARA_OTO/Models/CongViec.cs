@@ -31,7 +31,7 @@ namespace QUAN_LY_GARA_OTO.Models
 
             try
             {
-                string query = "INSERT INTO tb_CongViec ([content], [laborCost]) VALUES (@content, @laborCost)";
+                string query = "INSERT INTO tb_CongViec ([content], [laborCost]) VALUES  (N'@content', N'@laborCost')";
                 SqlCommand command = new SqlCommand(query, _connection);
                 command.Parameters.AddWithValue("@content", content);
                 command.Parameters.AddWithValue("@laborCost", laborCost);
@@ -58,7 +58,7 @@ namespace QUAN_LY_GARA_OTO.Models
 
             try
             {
-                string query = "UPDATE tb_CongViec SET [content] = @content, [laborCost] = @laborCost WHERE id = @id";
+                string query = "UPDATE tb_CongViec SET [content] = N'@content', [laborCost] = N'@laborCost' WHERE id = @id";
                 SqlCommand command = new SqlCommand(query, _connection);
                 command.Parameters.AddWithValue("@content", content);
                 command.Parameters.AddWithValue("@laborCost", laborCost);
