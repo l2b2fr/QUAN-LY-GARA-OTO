@@ -63,6 +63,14 @@
             this.txtPhatSinh = new System.Windows.Forms.TextBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtTonDau = new System.Windows.Forms.TextBox();
+            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.spareParts = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.unitPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.unitType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.beginningInventory = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.netChange = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.endingInventory = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.month = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -82,7 +90,7 @@
             // 
             this.barbtnDieuChinhSoLuongVatTu.Caption = "Điều chỉnh số lượng vật tư";
             this.barbtnDieuChinhSoLuongVatTu.Id = 8;
-            this.barbtnDieuChinhSoLuongVatTu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barbtnDieuChinhSoLuongVatTu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barbtnDieuChinhSoLuongVatTu.ImageOptions.SvgImage")));
             this.barbtnDieuChinhSoLuongVatTu.Name = "barbtnDieuChinhSoLuongVatTu";
             this.barbtnDieuChinhSoLuongVatTu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnDieuChinhSoLuongVatTu_ItemClick);
             // 
@@ -192,8 +200,18 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.id,
+            this.spareParts,
+            this.unitPrice,
+            this.unitType,
+            this.beginningInventory,
+            this.netChange,
+            this.endingInventory,
+            this.month});
             this.gridView1.GridControl = this.gridData;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             // 
             // labelControl1
             // 
@@ -342,7 +360,7 @@
             this.btnHuy.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnHuy.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Location = new System.Drawing.Point(567, 98);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(88, 32);
@@ -355,7 +373,7 @@
             this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLuu.ImageOptions.SvgImage")));
             this.btnLuu.Location = new System.Drawing.Point(460, 98);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(88, 32);
@@ -422,6 +440,70 @@
             this.txtTonDau.Name = "txtTonDau";
             this.txtTonDau.Size = new System.Drawing.Size(195, 26);
             this.txtTonDau.TabIndex = 3;
+            // 
+            // id
+            // 
+            this.id.Caption = "STT";
+            this.id.FieldName = "id";
+            this.id.Name = "id";
+            this.id.Visible = true;
+            this.id.VisibleIndex = 0;
+            // 
+            // spareParts
+            // 
+            this.spareParts.Caption = "Tên vật tư";
+            this.spareParts.FieldName = "spareParts";
+            this.spareParts.Name = "spareParts";
+            this.spareParts.Visible = true;
+            this.spareParts.VisibleIndex = 1;
+            // 
+            // unitPrice
+            // 
+            this.unitPrice.Caption = "Đơn giá";
+            this.unitPrice.FieldName = "unitPrice";
+            this.unitPrice.Name = "unitPrice";
+            this.unitPrice.Visible = true;
+            this.unitPrice.VisibleIndex = 2;
+            // 
+            // unitType
+            // 
+            this.unitType.Caption = "Loại đơn vị";
+            this.unitType.FieldName = "unitType";
+            this.unitType.Name = "unitType";
+            this.unitType.Visible = true;
+            this.unitType.VisibleIndex = 3;
+            // 
+            // beginningInventory
+            // 
+            this.beginningInventory.Caption = "Tồn đâu";
+            this.beginningInventory.FieldName = "beginningInventory";
+            this.beginningInventory.Name = "beginningInventory";
+            this.beginningInventory.Visible = true;
+            this.beginningInventory.VisibleIndex = 4;
+            // 
+            // netChange
+            // 
+            this.netChange.Caption = "Phát sinh";
+            this.netChange.FieldName = "netChange";
+            this.netChange.Name = "netChange";
+            this.netChange.Visible = true;
+            this.netChange.VisibleIndex = 5;
+            // 
+            // endingInventory
+            // 
+            this.endingInventory.Caption = "Tồn cuối";
+            this.endingInventory.FieldName = "endingInventory";
+            this.endingInventory.Name = "endingInventory";
+            this.endingInventory.Visible = true;
+            this.endingInventory.VisibleIndex = 6;
+            // 
+            // month
+            // 
+            this.month.Caption = "Tháng";
+            this.month.FieldName = "month";
+            this.month.Name = "month";
+            this.month.Visible = true;
+            this.month.VisibleIndex = 7;
             // 
             // ucQuanLyVatTuPhuTung
             // 
@@ -491,5 +573,13 @@
         private System.Windows.Forms.TextBox txtTonDau;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.DateEdit dtThang;
+        private DevExpress.XtraGrid.Columns.GridColumn id;
+        private DevExpress.XtraGrid.Columns.GridColumn spareParts;
+        private DevExpress.XtraGrid.Columns.GridColumn unitPrice;
+        private DevExpress.XtraGrid.Columns.GridColumn unitType;
+        private DevExpress.XtraGrid.Columns.GridColumn beginningInventory;
+        private DevExpress.XtraGrid.Columns.GridColumn netChange;
+        private DevExpress.XtraGrid.Columns.GridColumn endingInventory;
+        private DevExpress.XtraGrid.Columns.GridColumn month;
     }
 }

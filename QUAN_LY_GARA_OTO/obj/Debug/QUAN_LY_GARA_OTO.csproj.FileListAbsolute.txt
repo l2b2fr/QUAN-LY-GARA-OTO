@@ -96,3 +96,4 @@ C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpres
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.xml
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoCao.ucBaoCaoDoanhSo.resources
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyBaoCao.ucBaoCaoTon.resources
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.RichEdit.v22.2.Export.dll

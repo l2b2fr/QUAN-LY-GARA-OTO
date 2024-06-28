@@ -51,7 +51,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -61,6 +61,17 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
             btnThem.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
+            txtDonGia.Text = "";
+            txtLoaiDonVi.Text = "";
+            txtPhatSinh.Text = "";
+            txtTenVatTu.Text = "";
+            txtTonCuoi.Text = "";
+            txtTonDau.Text = "";
+        }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+
         }
     }
 }
