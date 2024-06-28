@@ -41,10 +41,15 @@
             this.txtHieuXe = new System.Windows.Forms.TextBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
-            this.txtSearch = new DevExpress.XtraEditors.TextEdit();
+            this.txtBienSoXe = new DevExpress.XtraEditors.TextEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.gridData = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.carBrand = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.carNumberPlates = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.debt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -53,7 +58,7 @@
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBienSoXe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
@@ -167,7 +172,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.btnTimKiem);
-            this.groupControl1.Controls.Add(this.txtSearch);
+            this.groupControl1.Controls.Add(this.txtBienSoXe);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupControl1.Location = new System.Drawing.Point(2, 2);
             this.groupControl1.Name = "groupControl1";
@@ -179,21 +184,22 @@
             // 
             this.btnTimKiem.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnTimKiem.Appearance.Options.UseFont = true;
-            this.btnTimKiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnTimKiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTimKiem.ImageOptions.SvgImage")));
             this.btnTimKiem.Location = new System.Drawing.Point(303, 61);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(113, 37);
             this.btnTimKiem.TabIndex = 1;
             this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // txtSearch
+            // txtBienSoXe
             // 
-            this.txtSearch.Location = new System.Drawing.Point(22, 66);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSearch.Properties.Appearance.Options.UseFont = true;
-            this.txtSearch.Size = new System.Drawing.Size(275, 26);
-            this.txtSearch.TabIndex = 0;
+            this.txtBienSoXe.Location = new System.Drawing.Point(22, 66);
+            this.txtBienSoXe.Name = "txtBienSoXe";
+            this.txtBienSoXe.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtBienSoXe.Properties.Appearance.Options.UseFont = true;
+            this.txtBienSoXe.Size = new System.Drawing.Size(275, 26);
+            this.txtBienSoXe.TabIndex = 0;
             // 
             // panelControl2
             // 
@@ -218,8 +224,64 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.id,
+            this.name,
+            this.carBrand,
+            this.carNumberPlates,
+            this.debt});
             this.gridView1.GridControl = this.gridData;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
+            // 
+            // id
+            // 
+            this.id.AppearanceCell.Options.UseTextOptions = true;
+            this.id.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.id.Caption = "STT";
+            this.id.FieldName = "id";
+            this.id.Name = "id";
+            this.id.Visible = true;
+            this.id.VisibleIndex = 0;
+            // 
+            // name
+            // 
+            this.name.AppearanceCell.Options.UseTextOptions = true;
+            this.name.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.name.Caption = "Chủ xe";
+            this.name.Name = "name";
+            this.name.Visible = true;
+            this.name.VisibleIndex = 1;
+            // 
+            // carBrand
+            // 
+            this.carBrand.AppearanceCell.Options.UseTextOptions = true;
+            this.carBrand.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.carBrand.Caption = "Hiệu xe";
+            this.carBrand.FieldName = "carBrand";
+            this.carBrand.Name = "carBrand";
+            this.carBrand.Visible = true;
+            this.carBrand.VisibleIndex = 2;
+            // 
+            // carNumberPlates
+            // 
+            this.carNumberPlates.AppearanceCell.Options.UseTextOptions = true;
+            this.carNumberPlates.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.carNumberPlates.Caption = "Biển số";
+            this.carNumberPlates.FieldName = "carNumberPlates";
+            this.carNumberPlates.Name = "carNumberPlates";
+            this.carNumberPlates.Visible = true;
+            this.carNumberPlates.VisibleIndex = 3;
+            // 
+            // debt
+            // 
+            this.debt.AppearanceCell.Options.UseTextOptions = true;
+            this.debt.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.debt.Caption = "Tiền nợ";
+            this.debt.FieldName = "debt";
+            this.debt.Name = "debt";
+            this.debt.Visible = true;
+            this.debt.VisibleIndex = 4;
             // 
             // panelControl3
             // 
@@ -250,6 +312,7 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "ucTraCuuXe";
             this.Size = new System.Drawing.Size(1354, 764);
+            this.Load += new System.EventHandler(this.ucTraCuuXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
@@ -257,7 +320,7 @@
             this.panelControl4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBienSoXe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).EndInit();
@@ -277,7 +340,7 @@
         private DevExpress.XtraGrid.GridControl gridData;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit txtSearch;
+        private DevExpress.XtraEditors.TextEdit txtBienSoXe;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnTimKiem;
         private DevExpress.XtraEditors.PanelControl panelControl4;
@@ -289,5 +352,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private System.Windows.Forms.TextBox txtBienSo;
         private System.Windows.Forms.TextBox txtHieuXe;
+        private DevExpress.XtraGrid.Columns.GridColumn id;
+        private DevExpress.XtraGrid.Columns.GridColumn name;
+        private DevExpress.XtraGrid.Columns.GridColumn carBrand;
+        private DevExpress.XtraGrid.Columns.GridColumn carNumberPlates;
+        private DevExpress.XtraGrid.Columns.GridColumn debt;
     }
 }

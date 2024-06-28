@@ -137,7 +137,7 @@ namespace QUAN_LY_GARA_OTO.Models
                 command.Parameters.AddWithValue("@id", id);
                 SqlDataReader reader = command.ExecuteReader();
 
-                if (reader.Read())
+                while (reader.Read())
                 {
                     tiepNhan = new TiepNhanXeSua
                     {

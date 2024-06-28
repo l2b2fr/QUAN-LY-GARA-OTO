@@ -228,7 +228,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                             MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
-                        txtThanhTien.Text = tong.ToString() + " vnđ";
+                        txtThanhTien.Text = string.Format("{0:0,0 vnđ}", tong);
                         SuaChua suaChua = new SuaChua();
                         suaChua.idTiepNhanXeSua = idTiepNhanXeSua;
                         suaChua.idSoLuongVatTuPhuTung = soLuongVatTuPhuTung.id;
@@ -241,10 +241,11 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                             loadVatTuPhuTung();
                             loadTienCong();
                             afterUpdateAndCreateAnDelete();
+                            updateTotalCost(idTiepNhanXeSua);
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi 2");
+                            MessageBox.Show("Ngày " + dtNgaySuaChua.Text + " chưa được tiếp nhận cho phương tiện này");
                         }
                     }
                     else
@@ -310,7 +311,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                     soLuongVatTuPhuTung.quantity = Convert.ToInt32(nudSoLuong.Value);
                     soLuongVatTuPhuTung.UpdateSoLuongVatTuPhuTung(soLuongVatTuPhuTung);
 
-                    txtThanhTien.Text = tong.ToString() + " vnđ";
+                    txtThanhTien.Text = string.Format("{0:0,0 vnđ}", tong);
                     SuaChua suaChua = new SuaChua();
                     suaChua.id = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "id").ToString());
                     suaChua.idTiepNhanXeSua = idTiepNhanXeSua;
@@ -358,19 +359,10 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
             tiepNhanXeSua = tiepNhanXeSua.getAllInfoTiepNhan(phuongTien.id, ngaySuaChua);
             if (tiepNhanXeSua != null)
             {
+                loadTienNo();
                 idTiepNhanXeSua = tiepNhanXeSua.id;
             }
         }
-
-        /*private void loadDataCmbNgayTiepNhan(PhuongTien phuongTien)
-        {
-            ComboEdit comboEdit = new ComboEdit();
-            List<string> list = new List<string>();
-            list = comboEdit.GetDataDate("SELECT dayReception FROM tb_TiepNhanXeSua, tb_PhuongTien WHERE tb_PhuongTien.carNumberPlates = " + phuongTien.id + " AND tb_PhuongTien.id = tb_TiepNhanXeSua.idPhuongTien");
-            cmbNgaySuaChua.Properties.Items.AddRange(list);
-            cmbNgaySuaChua.SelectedIndex = 0;
-        }
-        */
 
         private void loadVatTuPhuTung()
         {
@@ -391,7 +383,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
         private void lueTienCong_EditValueChanged(object sender, EventArgs e)
         {
             var values = lueCongViec.EditValue;
-            txtTienCong.Text = values.ToString() + " vnđ";
+            txtTienCong.Text = string.Format("{0:0,0 vnđ}", values);
             var values2 = lueCongViec.Properties.View.GetFocusedRowCellValue("id");
             idTienCong = Convert.ToInt32(values2);
             decimal tong = 0;
@@ -437,13 +429,13 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                 // Xử lý các lỗi khác
                 MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txtThanhTien.Text = tong.ToString();
+            txtThanhTien.Text = string.Format("{0:0,0 vnđ}", tong);
         }
 
         private void lueVatTuPhuTung_EditValueChanged(object sender, EventArgs e)
         {
             var values = lueVatTuPhuTung.EditValue;
-            txtDonGia.Text = values.ToString() + " vnđ";
+            txtDonGia.Text = string.Format("{0:0,0 vnđ}", values);
             var values2 = lueVatTuPhuTung.Properties.View.GetFocusedRowCellValue("id");
             idVatTuPhuTung = Convert.ToInt32(values2);
             decimal tong = 0;
@@ -490,12 +482,25 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                 MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            txtThanhTien.Text = tong.ToString() + " vnđ";
+            txtThanhTien.Text = string.Format("{0:0,0 vnđ}", tong);
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-
+            if (txtThanhToan.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tiền", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                TiepNhanXeSua tiepNhanXeSua = new TiepNhanXeSua();
+                string ngaySuaChua = DateTime.Parse(dtNgaySuaChua.Text).ToString("yyyy-MM-dd");
+                tiepNhanXeSua = tiepNhanXeSua.getAllInfoTiepNhan(phuongTien.id, ngaySuaChua);
+                tiepNhanXeSua.amountPaid = Convert.ToDecimal(txtThanhToan.Text);
+                tiepNhanXeSua.UpdateTiepNhanXeSua(tiepNhanXeSua);
+                loadData(phuongTien);
+                loadTienNo();
+            }
         }
 
         private bool checkValues()
@@ -554,7 +559,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
                 MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            txtThanhTien.Text = tong.ToString() + " vnđ";
+            txtThanhTien.Text = string.Format("{0:0,0 vnđ}", tong);
         }
         private void afterUpdateAndCreateAnDelete()
         {
@@ -579,18 +584,33 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoTri
         {
             lueVatTuPhuTung.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "content").ToString();
             nudSoLuong.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "quantity").ToString();
-            txtDonGia.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "unitPrice").ToString() + " vnđ";
+            txtDonGia.Text = string.Format("{0:0,0 vnđ}", Convert.ToDecimal(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "unitPrice")));
             lueCongViec.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "spareParts").ToString();
-            txtTienCong.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "laborCost").ToString() + " vnđ";
-            txtThanhTien.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "intoMoney").ToString() + " vnđ";
+            txtTienCong.Text = string.Format("{0:0,0 vnđ}", Convert.ToDecimal(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "laborCost")));
+            txtThanhTien.Text = string.Format("{0:0,0 vnđ}", Convert.ToDecimal(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "intoMoney")));
             idSoLuongVatTuPhuTung = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "idSoluong"));
         }
 
-        private void updateTotalCost(TiepNhanXeSua tiepNhanXeSua)
+        private void updateTotalCost(int id)
         {
             SuaChua suaChua = new SuaChua();
-            tiepNhanXeSua.totalCost = suaChua.GetSumIntoMoney(tiepNhanXeSua.id);
-            //tiepNhanXeSua.UpdateTiepNhanXeSua
+            TiepNhanXeSua tiepNhanXeSua = new TiepNhanXeSua();
+            string ngaySuaChua = DateTime.Parse(dtNgaySuaChua.Text).ToString("yyyy-MM-dd");
+            tiepNhanXeSua = tiepNhanXeSua.getAllInfoTiepNhan(phuongTien.id, ngaySuaChua);
+            tiepNhanXeSua.totalCost = suaChua.GetSumIntoMoney(id);
+            tiepNhanXeSua.UpdateTiepNhanXeSua(tiepNhanXeSua);
+            loadData(phuongTien);
+        }
+
+        private void loadTienNo()
+        {
+            TiepNhanXeSua tiepNhanXeSua = new TiepNhanXeSua();
+            string ngaySuaChua = DateTime.Parse(dtNgaySuaChua.Text).ToString("yyyy-MM-dd");
+            tiepNhanXeSua = tiepNhanXeSua.getAllInfoTiepNhan(phuongTien.id, ngaySuaChua);
+            tiepNhanXeSua.debt = (tiepNhanXeSua.totalCost - tiepNhanXeSua.amountPaid);
+            tiepNhanXeSua.UpdateTiepNhanXeSua(tiepNhanXeSua);
+            tiepNhanXeSua = tiepNhanXeSua.getAllInfoTiepNhan(phuongTien.id, ngaySuaChua);
+            txtTienNo.Text = string.Format("{0:0,0 vnđ}", tiepNhanXeSua.debt);
         }
     }
 }

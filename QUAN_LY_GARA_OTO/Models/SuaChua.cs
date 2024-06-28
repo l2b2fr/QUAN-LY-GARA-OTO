@@ -51,7 +51,6 @@ namespace QUAN_LY_GARA_OTO.Models
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
                 Console.WriteLine("Lỗi khi thêm phiếu sửa chữa: " + ex.Message);
                 return false;
             }
