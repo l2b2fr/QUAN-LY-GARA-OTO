@@ -249,6 +249,7 @@
             this.name.AppearanceCell.Options.UseTextOptions = true;
             this.name.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.name.Caption = "Chủ xe";
+            this.name.FieldName = "name";
             this.name.Name = "name";
             this.name.Visible = true;
             this.name.VisibleIndex = 1;
