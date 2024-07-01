@@ -82,8 +82,6 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyBaoCao
 
             chartControl3.Series.Add(chart);
 
-
-            
         }
 
         DataSet CreateData()

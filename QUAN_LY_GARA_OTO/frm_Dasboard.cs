@@ -1,8 +1,11 @@
 ﻿using DevExpress.XtraBars;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using QUAN_LY_GARA_OTO.UI;
 using QUAN_LY_GARA_OTO.UI.QuanLyBaoCao;
 using QUAN_LY_GARA_OTO.UI.QuanLyBaoTri;
 using QUAN_LY_GARA_OTO.UI.QuanLyKho;
+using QUAN_LY_GARA_OTO.UI.QuanLyTaiKhoan;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +31,7 @@ namespace QUAN_LY_GARA_OTO
         private ucQuanLyTienCong ucQuanLyTienCong;
         private ucBaoCaoDoanhSo ucBaoCaoDoanhSo;
         private ucBaoCaoTon ucBaoCaoTon;
+        private ucQuanLyTaiKhoan ucQuanLyTaiKhoan;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -59,7 +63,7 @@ namespace QUAN_LY_GARA_OTO
 
         private void aceTraCuuXe_Click(object sender, EventArgs e)
         {
-            btxtTieuDe.Caption= aceTraCuuXe.Text;
+            btxtTieuDe.Caption = aceTraCuuXe.Text;
             ucTraCuuXe = new ucTraCuuXe();
             ucTraCuuXe.Dock = DockStyle.Fill;
             mainContainer.Controls.Add(ucTraCuuXe);
@@ -113,7 +117,7 @@ namespace QUAN_LY_GARA_OTO
 
         private void aceDashBoard_Click_1(object sender, EventArgs e)
         {
-            btxtTieuDe.Caption= aceDashBoard.Text;
+            btxtTieuDe.Caption = aceDashBoard.Text;
             ucDashBoard = new ucDashBoard();
             ucDashBoard.Dock = DockStyle.Fill;
             mainContainer.Controls.Add(ucDashBoard);
@@ -127,7 +131,23 @@ namespace QUAN_LY_GARA_OTO
 
         private void accordionControlElement25_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đây là phiên bản v1.0\nNhà phát triển:\nLê Minh Nam 0123456789\nĐỗ Thị Thơm 0123456789\nPhạm Thúy Quỳnh 0123456789","Thông tin",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Đây là phiên bản v1.0\nNhà phát triển:\nLê Minh Nam 0123456789\nĐỗ Thị Thơm 0123456789\nPhạm Thúy Quỳnh 0123456789", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void accordionControlElement24_Click(object sender, EventArgs e)
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = ("https://www.facebook.com/profile.php?id=100056086951279");
+            driver.Navigate();
+        }
+
+        private void accordionControlElement22_Click(object sender, EventArgs e)
+        {
+            btxtTieuDe.Caption = "Quản lý tài khoản";
+            ucQuanLyTaiKhoan = new ucQuanLyTaiKhoan();
+            ucQuanLyTaiKhoan.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucQuanLyTaiKhoan);
+            ucQuanLyTaiKhoan.BringToFront();
         }
     }
 }

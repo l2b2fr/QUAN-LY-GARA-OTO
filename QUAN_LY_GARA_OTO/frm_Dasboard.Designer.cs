@@ -221,6 +221,7 @@
             this.accordionControlElement22.Name = "accordionControlElement22";
             this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement22.Text = "Tài khoản";
+            this.accordionControlElement22.Click += new System.EventHandler(this.accordionControlElement22_Click);
             // 
             // accordionControlElement6
             // 
@@ -238,6 +239,7 @@
             this.accordionControlElement24.Name = "accordionControlElement24";
             this.accordionControlElement24.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement24.Text = "Liên Hệ";
+            this.accordionControlElement24.Click += new System.EventHandler(this.accordionControlElement24_Click);
             // 
             // accordionControlElement25
             // 

@@ -103,3 +103,11 @@ C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpres
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.TreeMap.v22.2.Core.xml
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.XtraTreeMap.v22.2.xml
 C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\DevExpress.XtraTreeMap.v22.2.UI.xml
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\WebDriver.dll
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\bin\Debug\WebDriver.xml
+C:\Users\LEMINHNAM\Desktop\QUAN_LY_GARA_OTO\QUAN_LY_GARA_OTO\obj\Debug\QUAN_LY_GARA_OTO.UI.QuanLyTaiKhoan.ucQuanLyTaiKhoan.resources

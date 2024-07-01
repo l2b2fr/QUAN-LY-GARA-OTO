@@ -48,6 +48,8 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panelControl = new DevExpress.XtraEditors.PanelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnHuyTc = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuuTc = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -55,8 +57,6 @@
             this.panelGrid = new DevExpress.XtraEditors.PanelControl();
             this.gridData = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btnHuyTc = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLuuTc = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -128,7 +128,7 @@
             // 
             this.barbtnDieuChinhSoLuongCongViec.Caption = "Điều chỉnh số lượng công việc";
             this.barbtnDieuChinhSoLuongCongViec.Id = 9;
-            this.barbtnDieuChinhSoLuongCongViec.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barbtnDieuChinhSoLuongCongViec.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barbtnDieuChinhSoLuongCongViec.ImageOptions.SvgImage")));
             this.barbtnDieuChinhSoLuongCongViec.Name = "barbtnDieuChinhSoLuongCongViec";
             this.barbtnDieuChinhSoLuongCongViec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnDieuChinhSoLuongCongViec_ItemClick);
             // 
@@ -201,7 +201,7 @@
             this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnLuu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLuu.ImageOptions.SvgImage")));
             this.btnLuu.Location = new System.Drawing.Point(238, 102);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(88, 32);
@@ -253,6 +253,32 @@
             this.groupControl1.Size = new System.Drawing.Size(694, 139);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "Quản lý tiền công";
+            // 
+            // btnHuyTc
+            // 
+            this.btnHuyTc.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnHuyTc.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyTc.Appearance.Options.UseFont = true;
+            this.btnHuyTc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuyTc.ImageOptions.SvgImage")));
+            this.btnHuyTc.Location = new System.Drawing.Point(359, 102);
+            this.btnHuyTc.Name = "btnHuyTc";
+            this.btnHuyTc.Size = new System.Drawing.Size(88, 32);
+            this.btnHuyTc.TabIndex = 9;
+            this.btnHuyTc.Text = "Hủy";
+            this.btnHuyTc.Click += new System.EventHandler(this.btnHuyTc_Click);
+            // 
+            // btnLuuTc
+            // 
+            this.btnLuuTc.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnLuuTc.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuTc.Appearance.Options.UseFont = true;
+            this.btnLuuTc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLuuTc.ImageOptions.SvgImage")));
+            this.btnLuuTc.Location = new System.Drawing.Point(252, 102);
+            this.btnLuuTc.Name = "btnLuuTc";
+            this.btnLuuTc.Size = new System.Drawing.Size(88, 32);
+            this.btnLuuTc.TabIndex = 8;
+            this.btnLuuTc.Text = "Lưu";
+            this.btnLuuTc.Click += new System.EventHandler(this.btnLuuTc_Click);
             // 
             // labelControl1
             // 
@@ -321,32 +347,6 @@
             // 
             this.gridView1.GridControl = this.gridData;
             this.gridView1.Name = "gridView1";
-            // 
-            // btnHuyTc
-            // 
-            this.btnHuyTc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnHuyTc.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyTc.Appearance.Options.UseFont = true;
-            this.btnHuyTc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage1")));
-            this.btnHuyTc.Location = new System.Drawing.Point(359, 102);
-            this.btnHuyTc.Name = "btnHuyTc";
-            this.btnHuyTc.Size = new System.Drawing.Size(88, 32);
-            this.btnHuyTc.TabIndex = 9;
-            this.btnHuyTc.Text = "Hủy";
-            this.btnHuyTc.Click += new System.EventHandler(this.btnHuyTc_Click);
-            // 
-            // btnLuuTc
-            // 
-            this.btnLuuTc.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnLuuTc.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuTc.Appearance.Options.UseFont = true;
-            this.btnLuuTc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.btnLuuTc.Location = new System.Drawing.Point(252, 102);
-            this.btnLuuTc.Name = "btnLuuTc";
-            this.btnLuuTc.Size = new System.Drawing.Size(88, 32);
-            this.btnLuuTc.TabIndex = 8;
-            this.btnLuuTc.Text = "Lưu";
-            this.btnLuuTc.Click += new System.EventHandler(this.btnLuuTc_Click);
             // 
             // ucQuanLyTienCong
             // 
