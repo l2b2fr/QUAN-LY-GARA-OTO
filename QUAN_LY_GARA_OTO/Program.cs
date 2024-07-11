@@ -18,7 +18,7 @@ namespace QUAN_LY_GARA_OTO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Dashboard()); 
+            Application.Run(new frmLogin()); 
         }
     }
 }

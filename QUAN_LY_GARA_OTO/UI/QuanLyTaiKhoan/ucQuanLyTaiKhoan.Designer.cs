@@ -187,9 +187,12 @@
             this.slePhanQuyen.Properties.PopupView = this.searchLookUpEdit1View;
             this.slePhanQuyen.Size = new System.Drawing.Size(916, 26);
             this.slePhanQuyen.TabIndex = 10;
+            this.slePhanQuyen.EditValueChanged += new System.EventHandler(this.slePhanQuyen_EditValueChanged);
             // 
             // searchLookUpEdit1View
             // 
+            this.searchLookUpEdit1View.Appearance.Row.Options.UseTextOptions = true;
+            this.searchLookUpEdit1View.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -339,6 +342,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Name = "ucQuanLyTaiKhoan";
             this.Size = new System.Drawing.Size(1153, 602);
+            this.Load += new System.EventHandler(this.ucQuanLyTaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

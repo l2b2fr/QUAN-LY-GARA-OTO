@@ -52,6 +52,8 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
             btnThem.Enabled = false;
             btnXoa.Enabled = false;
             barbtnDieuChinhSoLuongCongViec.Enabled = false;
+            btnLuu.Enabled = false;
+            btnHuy.Enabled = false;
         }
 
         private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -65,6 +67,9 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
             btnLuuTc.Enabled = true;
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            barbtnDieuChinhSoLuongCongViec.Enabled = true;
+            btnLuu.Enabled = false;
+            btnHuy.Enabled = false;
         }
 
         private void btnLuuTc_Click(object sender, EventArgs e)

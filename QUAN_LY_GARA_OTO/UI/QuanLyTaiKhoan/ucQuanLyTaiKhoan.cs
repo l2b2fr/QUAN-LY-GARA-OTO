@@ -54,5 +54,28 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyTaiKhoan
             txtTaiKhoan.Text = "";
             txtMatKhau.Text = "";
         }
+
+        private void slePhanQuyen_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucQuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
+            // Tạo một DataTable
+            DataTable table = new DataTable();
+
+            // Thêm các cột vào DataTable
+            table.Columns.Add("Mã", typeof(int));
+            table.Columns.Add("Phân quyền", typeof(string));
+
+            table.Rows.Add(1, "ADMIN");
+            table.Rows.Add(2, "NHÂN VIÊN");
+
+            slePhanQuyen.Properties.DataSource = table;
+            slePhanQuyen.Properties.ValueMember = "Mã";
+            slePhanQuyen.EditValue = 1;
+            slePhanQuyen.Properties.DisplayMember = "Phân quyền";
+        }
     }
 }
