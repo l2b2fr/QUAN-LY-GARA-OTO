@@ -297,9 +297,12 @@
             this.permission});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             // 
             // id
             // 
+            this.id.AppearanceCell.Options.UseTextOptions = true;
+            this.id.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.id.Caption = "Mã";
             this.id.FieldName = "id";
             this.id.Name = "id";

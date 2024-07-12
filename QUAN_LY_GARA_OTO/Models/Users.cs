@@ -62,7 +62,7 @@ namespace QUAN_LY_GARA_OTO.Models
 
             try
             {
-                string query = "INSERT INTO tb_Users ([user], [password]) VALUES (@user, @password, @permission)";
+                string query = "INSERT INTO tb_Users ([user], [password], [permission]) VALUES (@user, @password, @permission)";
                 SqlCommand command = new SqlCommand(query, _connection);
                 command.Parameters.AddWithValue("@user", admin.user);
                 command.Parameters.AddWithValue("@password", admin.password);

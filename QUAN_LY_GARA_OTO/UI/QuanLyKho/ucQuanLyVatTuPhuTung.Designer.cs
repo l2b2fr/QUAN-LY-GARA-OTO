@@ -43,6 +43,13 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.gridData = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.spareParts = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.unitPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.unitType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.beginningInventory = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.netChange = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.endingInventory = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtLoaiDonVi = new System.Windows.Forms.TextBox();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -63,13 +70,6 @@
             this.txtPhatSinh = new System.Windows.Forms.TextBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtTonDau = new System.Windows.Forms.TextBox();
-            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.spareParts = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.unitPrice = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.unitType = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.beginningInventory = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.netChange = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.endingInventory = new DevExpress.XtraGrid.Columns.GridColumn();
             this.month = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
@@ -212,6 +212,64 @@
             this.gridView1.GridControl = this.gridData;
             this.gridView1.Name = "gridView1";
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
+            // 
+            // id
+            // 
+            this.id.AppearanceCell.Options.UseTextOptions = true;
+            this.id.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.id.Caption = "STT";
+            this.id.FieldName = "id";
+            this.id.Name = "id";
+            this.id.Visible = true;
+            this.id.VisibleIndex = 0;
+            // 
+            // spareParts
+            // 
+            this.spareParts.Caption = "Tên vật tư";
+            this.spareParts.FieldName = "spareParts";
+            this.spareParts.Name = "spareParts";
+            this.spareParts.Visible = true;
+            this.spareParts.VisibleIndex = 1;
+            // 
+            // unitPrice
+            // 
+            this.unitPrice.Caption = "Đơn giá";
+            this.unitPrice.FieldName = "unitPrice";
+            this.unitPrice.Name = "unitPrice";
+            this.unitPrice.Visible = true;
+            this.unitPrice.VisibleIndex = 2;
+            // 
+            // unitType
+            // 
+            this.unitType.Caption = "Loại đơn vị";
+            this.unitType.FieldName = "unitType";
+            this.unitType.Name = "unitType";
+            this.unitType.Visible = true;
+            this.unitType.VisibleIndex = 3;
+            // 
+            // beginningInventory
+            // 
+            this.beginningInventory.Caption = "Tồn đâu";
+            this.beginningInventory.FieldName = "beginningInventory";
+            this.beginningInventory.Name = "beginningInventory";
+            this.beginningInventory.Visible = true;
+            this.beginningInventory.VisibleIndex = 4;
+            // 
+            // netChange
+            // 
+            this.netChange.Caption = "Phát sinh";
+            this.netChange.FieldName = "netChange";
+            this.netChange.Name = "netChange";
+            this.netChange.Visible = true;
+            this.netChange.VisibleIndex = 5;
+            // 
+            // endingInventory
+            // 
+            this.endingInventory.Caption = "Tồn cuối";
+            this.endingInventory.FieldName = "endingInventory";
+            this.endingInventory.Name = "endingInventory";
+            this.endingInventory.Visible = true;
+            this.endingInventory.VisibleIndex = 6;
             // 
             // labelControl1
             // 
@@ -440,62 +498,6 @@
             this.txtTonDau.Name = "txtTonDau";
             this.txtTonDau.Size = new System.Drawing.Size(195, 26);
             this.txtTonDau.TabIndex = 3;
-            // 
-            // id
-            // 
-            this.id.Caption = "STT";
-            this.id.FieldName = "id";
-            this.id.Name = "id";
-            this.id.Visible = true;
-            this.id.VisibleIndex = 0;
-            // 
-            // spareParts
-            // 
-            this.spareParts.Caption = "Tên vật tư";
-            this.spareParts.FieldName = "spareParts";
-            this.spareParts.Name = "spareParts";
-            this.spareParts.Visible = true;
-            this.spareParts.VisibleIndex = 1;
-            // 
-            // unitPrice
-            // 
-            this.unitPrice.Caption = "Đơn giá";
-            this.unitPrice.FieldName = "unitPrice";
-            this.unitPrice.Name = "unitPrice";
-            this.unitPrice.Visible = true;
-            this.unitPrice.VisibleIndex = 2;
-            // 
-            // unitType
-            // 
-            this.unitType.Caption = "Loại đơn vị";
-            this.unitType.FieldName = "unitType";
-            this.unitType.Name = "unitType";
-            this.unitType.Visible = true;
-            this.unitType.VisibleIndex = 3;
-            // 
-            // beginningInventory
-            // 
-            this.beginningInventory.Caption = "Tồn đâu";
-            this.beginningInventory.FieldName = "beginningInventory";
-            this.beginningInventory.Name = "beginningInventory";
-            this.beginningInventory.Visible = true;
-            this.beginningInventory.VisibleIndex = 4;
-            // 
-            // netChange
-            // 
-            this.netChange.Caption = "Phát sinh";
-            this.netChange.FieldName = "netChange";
-            this.netChange.Name = "netChange";
-            this.netChange.Visible = true;
-            this.netChange.VisibleIndex = 5;
-            // 
-            // endingInventory
-            // 
-            this.endingInventory.Caption = "Tồn cuối";
-            this.endingInventory.FieldName = "endingInventory";
-            this.endingInventory.Name = "endingInventory";
-            this.endingInventory.Visible = true;
-            this.endingInventory.VisibleIndex = 6;
             // 
             // month
             // 

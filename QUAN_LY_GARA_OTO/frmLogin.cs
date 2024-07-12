@@ -1,4 +1,5 @@
-﻿using QUAN_LY_GARA_OTO.Models;
+﻿using DevExpress.XtraReports.UI;
+using QUAN_LY_GARA_OTO.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +63,10 @@ namespace QUAN_LY_GARA_OTO
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
+            //ReportPrintTool printTool = new ReportPrintTool(new DoanhSo());
+            //printTool.ShowPreview();
+            //ReportDesignTool designTool = new ReportDesignTool(new ReportDoanhSo());
+            //designTool.ShowDesigner();
             Users admin = new Users();
             admin.user = txt_TaiKhoan.Text;
             admin.password = txt_MatKhau.Text;

@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using QUAN_LY_GARA_OTO.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,13 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
             btnLuu.Enabled = false;
             btnHuyTc.Enabled = false;
             btnLuuTc.Enabled = false;
+            loadData();
+        }
+
+        private void loadData()
+        {
+            DataToTable gridControl = new DataToTable();
+            gridData.DataSource = gridControl.GetDataTable("SELECT * FROM tb_CongViec");
         }
 
         private void barbtnDieuChinhSoLuongCongViec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

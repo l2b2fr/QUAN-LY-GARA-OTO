@@ -57,6 +57,9 @@
             this.panelGrid = new DevExpress.XtraEditors.PanelControl();
             this.gridData = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.content = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.laborCost = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -345,8 +348,38 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.Options.UseTextOptions = true;
+            this.gridView1.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.id,
+            this.content,
+            this.laborCost});
             this.gridView1.GridControl = this.gridData;
             this.gridView1.Name = "gridView1";
+            // 
+            // id
+            // 
+            this.id.Caption = "Mã";
+            this.id.FieldName = "id";
+            this.id.Name = "id";
+            this.id.Visible = true;
+            this.id.VisibleIndex = 0;
+            // 
+            // content
+            // 
+            this.content.Caption = "Tên công việc";
+            this.content.FieldName = "content";
+            this.content.Name = "content";
+            this.content.Visible = true;
+            this.content.VisibleIndex = 1;
+            // 
+            // laborCost
+            // 
+            this.laborCost.Caption = "Tiền công";
+            this.laborCost.FieldName = "laborCost";
+            this.laborCost.Name = "laborCost";
+            this.laborCost.Visible = true;
+            this.laborCost.VisibleIndex = 2;
             // 
             // ucQuanLyTienCong
             // 
@@ -407,5 +440,8 @@
         private DevExpress.XtraBars.BarButtonItem barbtnDieuChinhSoLuongCongViec;
         private DevExpress.XtraEditors.SimpleButton btnHuyTc;
         private DevExpress.XtraEditors.SimpleButton btnLuuTc;
+        private DevExpress.XtraGrid.Columns.GridColumn id;
+        private DevExpress.XtraGrid.Columns.GridColumn content;
+        private DevExpress.XtraGrid.Columns.GridColumn laborCost;
     }
 }

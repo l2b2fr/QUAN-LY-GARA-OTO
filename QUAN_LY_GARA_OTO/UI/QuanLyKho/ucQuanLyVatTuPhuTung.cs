@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using QUAN_LY_GARA_OTO.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,7 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
             txtTenVatTu.Focus();
             btnHuy.Enabled = false;
             btnLuu.Enabled = false;
+            loadData();
         }
         private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -72,6 +74,12 @@ namespace QUAN_LY_GARA_OTO.UI.QuanLyKho
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
 
+        }
+
+        private void loadData()
+        {
+            DataToTable dataToTable = new DataToTable();
+            gridData.DataSource = dataToTable.GetDataTable("SELECT \r\n    vtp.[id], \r\n    vtp.[spareParts], \r\n    vtp.[unitPrice], \r\n    vtp.[unitType],\r\n    qlk.[beginningInventory], \r\n    qlk.[netChange], \r\n    qlk.[endingInventory],\r\n    qlk.[month]\r\nFROM \r\n    [tb_VatTuPhuTung] vtp\r\nINNER JOIN \r\n    [tb_QuanLyKho] qlk\r\nON \r\n    vtp.[id] = qlk.[idVatTuPhuTung];");
         }
     }
 }

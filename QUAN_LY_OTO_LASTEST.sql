@@ -399,3 +399,18 @@ VALUES
 (N'Thay bộ phận cảm biến vị trí chân ga', 700000),
 (N'Thay bộ phận cảm biến lưu lượng nhiên liệu', 750000),
 (N'Thay bộ phận cảm biến áp suất phanh', 800000);
+
+DECLARE @i INT = 1;
+
+WHILE @i <= 138
+BEGIN
+    INSERT INTO [tb_QuanLyKho] ([idVatTuPhuTung], [beginningInventory], [netChange], [endingInventory], [month])
+    VALUES (
+        @i, 
+        CAST(RAND() * 1000 AS INT), -- beginningInventory ngẫu nhiên từ 0 đến 1000
+        CAST(RAND() * 200 - 100 AS INT), -- netChange ngẫu nhiên từ -100 đến 100
+        CAST(RAND() * 1000 AS INT), -- endingInventory ngẫu nhiên từ 0 đến 1000
+        DATEADD(MONTH, @i % 7, '2024-01-01') -- month ngẫu nhiên từ tháng 1 đến tháng 12 của năm 2023
+    );
+    SET @i = @i + 1;
+END;
